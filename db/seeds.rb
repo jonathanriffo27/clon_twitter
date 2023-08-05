@@ -6,6 +6,6 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-50.times do |_i|
-  Tweet.create(userName: Faker::Name.name, description: Faker::Lorem.paragraph_by_chars)
+50.times do |i|
+  Tweet.create(idd: "#{i + 1}", userName: Faker::Name.name, description: Faker::Lorem.paragraph_by_chars)
 end
