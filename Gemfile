@@ -72,4 +72,7 @@ group :test do
   gem 'webdrivers'
 end
 
-gem "pg_search", "~> 2.3"
+gem 'pg_search', '~> 2.3'
+
+gem 'faker'
+gem 'pagy'

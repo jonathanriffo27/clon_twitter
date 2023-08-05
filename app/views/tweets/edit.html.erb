@@ -1,10 +1,7 @@
-<h1>Editing tweet</h1>
-
+<h1 class='mt-5'>Editando tweet</h1>
 <%= render "form", tweet: @tweet %>
-
 <br>
-
-<div>
-  <%= link_to "Show this tweet", @tweet %> |
-  <%= link_to "Back to tweets", tweets_path %>
+<div class='d-flex justify-content-end'>
+  <%= link_to "Ver tweet", @tweet, class:"btn btn-primary me-2" %>
+  <%= link_to "Volver al inicio", tweets_path,class:"btn btn-primary" %>
 </div>
