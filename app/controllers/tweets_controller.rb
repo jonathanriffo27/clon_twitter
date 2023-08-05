@@ -3,7 +3,7 @@ class TweetsController < ApplicationController
 
   # GET /tweets or /tweets.json
   def index
-    @pagy, @tweets = pagy(Tweet.all)
+    @pagy, @tweets = pagy(Tweet.all.order(updated_at: :desc))
 
     return unless params[:query_text].present?
 
